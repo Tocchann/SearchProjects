@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ListupDependProjects": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\v14_Develop\\IKIPInstaller64.ism",
+      "workingDirectory": "C:\\Projects\\Morrin\\IkinariPDF\\v14\\SearchProjects\\ListupDependProjects"
+    }
+  }
+}
