@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Text.Json;
 using System.Xml;
-using System.Xml.Linq;
 
 Trace.Listeners.Add( new ConsoleTraceListener() );
 
@@ -176,6 +175,8 @@ void ReadReferFiles( HashSet<string> referFiles, XmlDocument ism, string baseDir
 						// どこかのパスとして変換された場合だけ格納する(<???>のままのものは無視
 						if( !sourcePath.Contains( '<' ) )
 						{
+							// .ism より上位のフォルダを参照する可能性もあるので、正規化する
+							sourcePath = Path.GetFullPath( sourcePath );
 							referFiles.Add( sourcePath );
 						}
 					}
