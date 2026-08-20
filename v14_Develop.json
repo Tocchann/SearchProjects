@@ -1,0 +1,13 @@
+{
+  "Root": "C:\\Projects\\Morrin\\IkinariPDF\\v14\\v14_Develop",
+  "VSVersion": 18,
+  "IsmFile": "IKIPInstaller64.ism",
+  "SolutionFile": "IKIP_BuildAll.sln",
+  "RemapPaths": [
+    {
+        "Source": "<ISProjectFolder>\\bin",
+        "Destination": "<ISProjectFolder>\\Installer\\SetupModules\\bin"
+    }
+  ],
+  "OutputName": "BuildTargetProjects.json"
+}
