@@ -43,5 +43,5 @@ foreach( $prj in $allProjects ){
         $unrefProjects += $relPath
     }
 }
-New-Item -ItemType Directory -Path ".\obj" -Force
+New-Item -ItemType Directory -Path ".\obj" -Force | Out-Null
 Set-Content ".\obj\UnrefProjects.txt" -Value $unrefProjects -Encoding UTF8
